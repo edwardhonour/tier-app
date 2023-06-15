@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-lg-4 col-xl-3 col-xxl-2">
+      <app-sitebar-wrapper></app-sitebar-wrapper>       
+    </div>
+  <div class="col-lg-8 col-xl-9 col-xxl-10">
+  <sql-add-table [title]="'Mailboxes not Processed'"
+    [use_parameters]="'Y'"
+    (row_click)="processRow($event)"
+    (button_click)="processButton($event)"
+    [sql]="'select * from doc_whitelist order by to_email, from_email'">
+  <th #column id="id">id</th>
+  <th #column id="from_email">From Email</th>
+  <th #column id="to_email">To Email</th>
+  <button #column class="btn btn-primary"><i class="bi bi-clipboard-data"></i></button>
+  <div form>
+    <app-white-list-form></app-white-list-form>
+  </div>
+  </sql-add-table>
+  </div>
+  </div>

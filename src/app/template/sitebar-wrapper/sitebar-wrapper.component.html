@@ -1,0 +1,64 @@
+<div class="row" style="margin-top:-100px;">
+  <div class="col-12">
+  <nav class="card card-body" style="border-radius: 10px 90px 90px 10px;" >
+    <div class="container">
+      <div class="sidebar-brand">
+        <a href="index.html" class="logo">
+          <img class="img-fluid" src="assets/sqllabs-logo-dark.png" alt="Argonne National Laboratory" />
+        </a>
+      </div>
+    </div>
+  <div class="sidebar-menu">
+    <div class="sidebarMenuScroll">
+          <div class="flex-shrink-0 p-0 bg-white">
+              <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+                <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+              </a>
+              <ul class="list-unstyled ps-0">
+                <li class="mb-1">
+                  <button [routerLink]="['/sadmin']" class="btn align-items-center rounded">
+                    <i class="bi bi-house-add"></i><span class="p-3">Home</span>
+                  </button>
+                </li>
+                <li class="mb-1">
+                  <button [routerLink]="['/workspaces']" class="btn align-items-center rounded">
+                    <i class="bi bi-file-lock"></i><span class="p-3">Mailboxes</span>
+                  </button>
+                </li>
+                <li class="mb-1">
+                  <button [routerLink]="['/whitelist']" class="btn btn-toggle align-items-center rounded">
+                    <i class="bi bi-file-earmark-richtext"></i><span class="p-3">Whitelist</span>
+                  </button>
+                </li>
+                <li class="mb-1">
+                  <button [routerLink]="['/verify']" class="btn btn-toggle align-items-center rounded">
+                    <i class="bi bi-file-person"></i><span class="p-3">File Upload</span>
+                  </button>
+                </li>
+                <li class="mb-1">
+                  <button [routerLink]="['/forward']" class="btn btn-toggle align-items-center rounded">
+                    <i class="bi bi-send-check"></i><span class="p-3">Forward</span>
+                  </button>
+                </li>
+                <li class="mb-1">
+                  <button [routerLink]="['/admin']" class="btn btn-toggle align-items-center rounded">
+                    <i class="bi bi-gear"></i><span class="p-3">Dashboard</span>
+                  </button>
+                </li>
+                <li class="mb-1">
+                  <button [routerLink]="['/settings']" class="btn btn-toggle align-items-center rounded">
+                    <i class="bi bi-gear"></i><span class="p-3">Settings</span>
+                  </button>
+                </li>
+                <li class="mb-1">
+                  <button [routerLink]="['/']" class="btn btn-toggle align-items-center rounded">
+                    <span class="p-3">Logout</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+    </div>
+  </div>    
+</nav>   
+</div>
+</div>

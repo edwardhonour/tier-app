@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'tier-app'`, () => {
+  it(`should have as title 'document-ledger'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('tier-app');
+    expect(app.title).toEqual('document-ledger');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('tier-app app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('document-ledger app is running!');
   });
 });

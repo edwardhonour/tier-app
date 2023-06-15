@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col-lg-4 col-xl-3 col-xxl-2">
+    <app-sitebar-wrapper></app-sitebar-wrapper>       
+  </div>
+<div class="col-lg-8 col-xl-9 col-xxl-10">
+<sql-add-table [title]="'Local Mailboxes'"
+  [use_parameters]="'Y'"
+  (row_click)="processRow($event)"
+  (button_click)="processButton($event)"
+  [sql]="'select * from doc_mailbox order by id desc'">
+<th #column id="id">id</th>
+<th #column id="email_name">Email</th>
+<th #column id="org_name">Organization</th>
+<th #column id="email_count">Email Count</th>
+<th #column id="very_low_count">Very Low</th>
+<th #column id="low_count">Low</th>
+<th #column id="med_count">Medium</th>
+<th #column id="high_count">High</th>
+<th #column id="very_high_count">Very High</th>
+<th #column id="not_count">Not Processed</th>
+<button #column class="btn btn-primary"><i class="bi bi-clipboard-data"></i></button>
+<div form>
+  <app-doc-workspace-form></app-doc-workspace-form>
+</div>
+</sql-add-table>
+</div>
+</div>

@@ -1,0 +1,24 @@
+<sql-form 
+ [table]="'doc_workspace'" [embedded]="'Y'"
+ [title]="'Forward Emails to TIER'"
+ [id]="'0'" [id2]="''" [id3]="''"
+ [default_col]= "''" [default_value]="''">
+  
+<div class="row">
+<div class="col-sm-12 col-lg-12 col-xl-12">
+   <sql-textarea [col]="'workspace_dsc'" [style]="'width:95%;'" [label]="'Notes'">
+   </sql-textarea>
+   <button style="margin-right:20px;" class="btn btn-danger p-2">Forward Very High</button>
+   <button style="margin-right:20px;" class="btn btn-danger p-2">Forward >= High</button>
+   <button style="margin-right:20px;" class="btn btn-primary p-2">Forward >= Medium</button>
+   <button style="margin-right:20px;" class="btn btn-secondary p-2">Forward >= Low</button>
+   <button style="margin-right:20px;" class="btn btn-secondary p-2">Forward ALL</button>
+<div class="row">
+<div class="col-sm-12">
+
+</div>
+</div>
+</div>
+</div>
+</sql-form>
+
